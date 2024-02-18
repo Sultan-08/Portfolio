@@ -1,0 +1,507 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #D1D1D1;
+    color: rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navigation Bar */
+
+header {
+    box-sizing: border-box;
+    margin: 0;
+    text-decoration: none;
+    background-color: rgb(196, 196, 196);
+}
+header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+header a, a {
+    text-decoration: none;
+}
+
+.jp a,
+.main-nav a {
+    padding: 10px 15px;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    color: var(--darkbg);
+}
+.jp {
+    margin: 0;
+    font-size: 17px;
+    text-decoration: none;
+}
+.main-nav {
+    margin-top: -10px;
+}
+.main-nav a {
+    font-size: 16px;
+    color: rgb(70, 70, 70);
+    font-weight: 500;
+}
+
+.main-nav .active {
+    color: black;
+    font-weight: 700;
+}
+.header {
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+@media (min-width: 300px) {
+    .header,
+    .main-nav {
+        display: flex;
+    }
+    .header {
+        justify-content: space-around;
+        align-items: center;
+        height: 4rem;
+        width: 100%;
+        /* margin: 0 auto; */
+        /* max-width: 1150px; */
+        /* position: sticky;
+        top: 0;
+        z-index: 20; */
+    }
+}
+
+@media (min-width: 768px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        /* padding-top: 20px;
+        padding-bottom: 20px; */
+        background-color: rgb(196, 196, 196);
+        width: 100%;
+        padding: 0.5rem 2.5rem 0.5rem 2.5rem;
+    }
+    .main-nav .active {
+        color: black;
+    }
+    .main-nav {
+        margin-right: 40px;
+        margin-top: 10px;
+    }
+    .main-nav a:hover {
+        color: var(--gray-02);
+        transition: .5s ease-in-out;
+    }
+    .jp {
+        margin-left: 40px;
+        font-size: 1.45em;
+    }
+    .jp a {
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+        color: black;
+    }
+    .main-nav a:hover {
+        color: black;
+    }
+    .main-nav a {
+        margin: 10px 10px;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+        font-size: 18px;
+    }
+    header a {
+        position: relative;
+    }
+    header a:after{
+        content: '';
+        position: absolute;
+        width: 0; height: 3px;
+        display: block;
+        margin-top: 3px;
+        right: 0;
+        background: linear-gradient(120deg, #5591FF 0%, #42b0f4 100%);
+        transition: width 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+        -webkit-transition: width .5s ease;
+    }
+    header a:hover:after {
+        width: 100%;
+        left: 0;
+        background: linear-gradient(120deg, #5591FF 0%, #42b0f4 100%);;
+    }
+}
+
+/* Title Section */
+main hr {
+    border: 0;
+    background: rgb(0, 0, 0);
+    height: 1.2px;
+    margin: 40px 84px;
+}
+
+.left {
+    font-size: 1.5rem;
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    margin: 4rem 10rem;
+    align-items: center;
+}
+
+.firstSection > div {
+    width: 50%;
+}
+
+.leftSection {
+    font-size: 2.5rem;
+}
+
+.rightSection img {
+    width: 80%;
+    height: 80%;
+    margin: 0 3rem;
+}
+
+.purple {
+    color: rgb(56, 56, 56);
+    font-weight: 600;
+}
+
+#element {
+    color: rgb(56, 56, 56);
+    font-weight: 600;
+}
+
+section {
+    max-width: 80vw;
+    margin: auto;
+    /* height: 80vh; */
+}
+
+section h1 {
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    font-weight: 100;
+}
+
+/* Projects Section */
+
+#myProjects {
+    margin-top: 45px !important;
+    text-align: center !important;
+    border-bottom: 1px solid rgb(41, 41, 41) !important; 
+    width: 85%;
+    margin-bottom: 3rem !important;
+    line-height: .1em !important;
+    margin-left: 9% !important;
+    padding-top: 2rem;
+}
+#myProjects span { 
+    background: #D1D1D1; 
+    padding: 0 12px !important; 
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:0;
+}
+.image-container img {
+    height: 30rem;
+    width: 35rem;
+    margin: 2rem;
+    border-radius: 10px;
+    display: block;
+}
+.image-container {
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 30rem;
+    width: 35rem;
+    margin: 2rem;
+    opacity: 0;
+    transition: .5s ease-in-out;
+    border-radius: 10px;
+}
+.eater-overlay {
+    background-color: rgba(198, 103, 109, 0.65); /*Eater background img color w/ .65 opacity*/
+}
+
+.facebook-watch-overlay {
+    background-color: rgba(23, 120, 242, 0.65); /*Facebook Watch background img color w/ .65 opacity*/  
+}
+
+.explornell-overlay {
+    background-color: rgba(148, 110, 221, 0.65); /*Explornell background img color w/ .65 opacity*/
+}
+.instagram-overlay {
+    background-color: rgba(81, 136, 102, 0.75); /*Instagram background img color w/ .65 opacity*/
+}
+.uplift-overlay {
+    background-color: rgba(144, 144, 144, 0.65); /*Uplift background img color w/ .65 opacity*/
+}
+.cureviews-overlay {
+    background-color: rgba(77, 143, 219, 0.70); /*CU Reviews background img color w/ .65 opacity*/
+}
+.dailyui-overlay {
+    background-color: rgba(120, 172, 74, 0.65); /*Daily UI background img color w/ .65 opacity*/
+}
+.overlay h2 {
+    color: white;
+    position: absolute;
+    text-shadow: 2px 4px 8px rgba(0,0,0,0.3);
+    top: 50%;
+    left: 51.5%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+/*Only hover on DESKTOP*/
+@media screen and (min-width: 700px) {
+    .image-container:hover .overlay {
+        opacity: 1;
+        transition: .3s ease-in-out;
+    }
+    .image-container:hover {
+        transition: .3s ease-in-out;
+        transform: scale(1.03);
+    }
+    .image-container:hover .overlay h3{
+        animation: slide-up .35s ease-out;
+    }
+    .mobile-no-hover {
+        display: none !important;
+    }
+    .image-container img {
+        box-shadow: 6px 7px 28px 0 rgba(16, 16, 16, 0.3);
+    }
+}
+
+.mobile-no-hover {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 2vh;
+}
+
+.overlay img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 5px;
+}
+
+
+/* Footer */
+
+.line {
+    text-align: center !important;
+    margin-top: 22px !important;
+    margin-bottom: 9px !important;
+}
+
+.line a{
+    position: relative;  
+    font-size: 98% !important;
+    transition: .35s ease-in-out;
+    text-decoration: none;
+}
+.line a:hover::before, .line a:hover::after {
+    color: black !important;
+    bottom: -7px;
+    height: 10px;
+    transition: .35s ease-in-out;
+}
+.line a::after {
+    display: block;
+    content: '';
+    height: 12px;
+    transition: .35s ease-in-out;
+    width: 92%;
+    opacity: .2;
+    position: absolute;
+    bottom: 1px;
+    left: 30px;
+}
+@media screen and (max-width: 992px) {
+    .line a::after {
+        left: 24px;
+    }
+}
+.line a::before {
+    -webkit-transition: width 0.4s cubic-bezier(0.51, 0.18, 0, 0.88) 0.1s;
+    transition: .35s ease-in-out;
+}
+.line a::after {
+    -webkit-transition:width 0.4s cubic-bezier(0.29, 0.18, 0.26, 0.83);
+    transition: .35s ease-in-out;
+}
+
+/*Blue Line*/
+.blueline a{
+    color: #639aff !important;
+    text-transform: uppercase;
+}
+.blueline a::after {
+    background: #669CFF !important;
+}
+/*Pink Line*/
+.pinkline a{
+    color: pink !important;
+    text-transform: uppercase;
+}
+.pinkline a::after {
+    background: pink !important;
+}
+/*Yellow Line*/
+.yellowline a{
+    color: yellow !important;
+    text-transform: uppercase;
+}
+.yellowline a::after {
+    background: yellow !important;
+}
+/*Green Line*/
+.greenline a{
+    color: green !important;
+    text-transform: uppercase;
+}
+.greenline a::after {
+    background: green !important;
+}
+/*Purple Line*/
+.purpleline a{
+    color: purple !important;
+    text-transform: uppercase;
+}
+.purpleline a::after {
+    background: purple !important;
+}
+/*Facebook Blue Line*/
+.facebookblueline a{
+    color: blue !important;
+    text-transform: uppercase;
+}
+.facebookblueline a::after {
+    background: blue !important;
+}
+
+.footer {
+    background-color: rgb(196, 196, 196);
+    margin-top: 5vh;
+    padding-top: 2vh;
+    padding-bottom: 5vh;
+
+    width: 100% auto;
+}
+.social {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+}
+.social a {
+    text-decoration: none;
+}
+.icon {
+    /* height: 3.5rem;
+    width: 1rem; */
+    margin: 0.5rem;
+}
+.icon:hover {
+    transform: scale(1.1);
+    transition: .5s ease;
+}
+
+/*Mobile Footer*/
+@media screen and (min-width: 375px) {
+    .icon {
+        width: 55px;
+    }
+}
+.name {
+    font-weight: 500;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 13px;
+    color: var(--gray-04)
+}
+@media screen and (min-width: 768px) {
+    .name {
+        font-size: 16px;
+    }
+}
+#blueStar {
+    color: var(--blue);
+}
+#pinkStar {
+    color: var(--pink);
+}
+#yellowStar {
+    color: var(--yellow);
+}
+#facebookBlueStar {
+    color: var(--facebookblue);
+}
+#greenStar {
+    color: var(--green);
+}
+#purpleStar {
+    color: var(--purple);
+}
+
+.love {
+    background: linear-gradient(270deg, #FD7373, #669CFF);
+    background-clip: text;
+    font-weight: bold;
+    -webkit-text-fill-color: transparent;
+}
+
+/* ===============
+ANIMATIONS 
+=============== */
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(0.05%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes slide-up {
+    0% {
+        top: 75%;
+    }
+    100% {
+
+        top: 50%;
+    }
+}
+
