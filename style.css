@@ -316,6 +316,76 @@ section h2 {
     width: 5px;
 }
 
+/* Skiis */
+
+#mySkills {
+    margin-top: 45px !important;
+    text-align: center !important;
+    border-bottom: 1px solid rgb(41, 41, 41) !important; 
+    width: 85%;
+    margin-bottom: 3rem !important;
+    line-height: .1em !important;
+    margin-left: 9% !important;
+    padding-top: 2rem;
+}
+
+#mySkills span { 
+    background: #D1D1D1; 
+    padding: 0 12px !important; 
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* margin: 5rem; */
+}
+.skills-container img {
+    height: 10rem;
+    width: 10rem;
+    margin: 2rem;
+    border-radius: 1rem;
+    display: block;
+    opacity: 1;
+}
+
+.skills-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 11rem;
+    width: 11rem;
+    margin: 2rem;
+    opacity: 0;
+    transition: .5s ease-in-out;
+    border-radius: 10px;
+}
+
+.color-skills-overlay {
+    background-color: rgba(23, 120, 242, 0.65); /*Facebook Watch background img color w/ .65 opacity*/  
+}
+
+/*Only hover on DESKTOP*/
+@media screen and (min-width: 700px) {
+    .skills-container:hover .overlay {
+        opacity: 1;
+        transition: .3s ease-in-out;
+    }
+    .skills-container:hover {
+        transition: .3s ease-in-out;
+        transform: scale(1.03);
+    }
+    .skills-container:hover .overlay h3{
+        animation: slide-up .35s ease-out;
+    }
+    .mobile-no-hover {
+        display: none !important;
+    }
+}
 
 /* Footer */
 
