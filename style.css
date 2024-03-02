@@ -433,8 +433,9 @@ section h2 {
 }
 
 .social i {
-    font-size: 1.2rem;
-    margin-right: 1rem;
+    font-size: 4rem;
+    margin-right: 1.5rem;
+    color: black;
 }
 
 /*Blue Line*/
