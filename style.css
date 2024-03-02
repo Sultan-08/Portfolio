@@ -432,6 +432,11 @@ section h2 {
     transition: .35s ease-in-out;
 }
 
+.social i {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
 /*Blue Line*/
 .blueline a{
     color: #639aff !important;
