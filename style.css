@@ -438,6 +438,11 @@ section h2 {
     color: black;
 }
 
+.social i:hover {
+    transform: scale(1.1);
+    transition: .6s ease;
+}
+
 /*Blue Line*/
 .blueline a{
     color: #639aff !important;
