@@ -393,7 +393,6 @@ section h2 {
     text-align: center !important;
     margin-top: 22px !important;
     margin-bottom: 9px !important;
-    margin-left: 10rem;
 }
 
 .line a{
@@ -434,7 +433,7 @@ section h2 {
 }
 
 .social i {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     margin-right: 1.5rem;
     color: black;
 }
@@ -442,11 +441,6 @@ section h2 {
 .social i:hover {
     transform: scale(1.1);
     transition: .6s ease;
-}
-
-.changer {
-    display: inline-flex;
-    width: 100%;
 }
 
 /*Blue Line*/
@@ -510,7 +504,6 @@ section h2 {
     margin: 0 auto;
     text-align: center;
     margin-top: 20px;
-    margin-left: 40rem;
 }
 .social a {
     text-decoration: none;
@@ -569,7 +562,6 @@ section h2 {
     font-weight: bold;
     -webkit-text-fill-color: transparent;
 }
-
 /* ===============
 ANIMATIONS 
 =============== */
