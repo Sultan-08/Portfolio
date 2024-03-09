@@ -24,125 +24,132 @@
     </header> 
 
 <!-- Title Section -->
-    <main>
-        <section class="firstSection">
-            <div class="leftSection">
-                Hi, My name is <span class="purple">Sultan</span>
-                <div>and I am a passionate</div>
-                <span id="element"></span>
-            </div>
-            <div class="rightSection">
-                <img src="./IMG/Main.png" alt="Profile Picture">
-            </div>
-        </section>
+
+<form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/{form_id}" method="post">
+  <fieldset id="fs-frm-inputs">
+    <label for="full-name">Full Name</label>
+    <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+    <label for="email-address">Email Address</label>
+    <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+    <label for="message">Message</label>
+    <textarea rows="5" name="message" id="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required=""></textarea>
+    <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+  </fieldset>
+  <input type="submit" value="Submit">
+</form><style>/* reset */
+#fs-frm input,
+#fs-frm select,
+#fs-frm textarea,
+#fs-frm fieldset,
+#fs-frm optgroup,
+#fs-frm label,
+#fs-frm #card-element:disabled {
+  font-family: inherit;
+  font-size: 100%;
+  color: inherit;
+  border: none;
+  border-radius: 0;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+#fs-frm label,
+#fs-frm legend,
+#fs-frm ::placeholder {
+  font-size: .825rem;
+  margin-bottom: .5rem;
+  padding-top: .2rem;
+  display: flex;
+  align-items: baseline;
+}
+
+/* border, padding, margin, width */
+#fs-frm input,
+#fs-frm select,
+#fs-frm textarea,
+#fs-frm #card-element {
+  border: 1px solid rgba(0,0,0,0.2);
+  background-color: rgba(255,255,255,0.9);
+  padding: .75em 1rem;
+  margin-bottom: 1.5rem;
+}
+#fs-frm input:focus,
+#fs-frm select:focus,
+#fs-frm textarea:focus {
+  background-color: white;
+  outline-style: solid;
+  outline-width: thin;
+  outline-color: gray;
+  outline-offset: -1px;
+}
+#fs-frm [type="text"],
+#fs-frm [type="email"] {
+  width: 100%;
+}
+#fs-frm [type="button"],
+#fs-frm [type="submit"],
+#fs-frm [type="reset"] {
+  width: auto;
+  cursor: pointer;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+}
+#fs-frm [type="button"]:focus,
+#fs-frm [type="submit"]:focus,
+#fs-frm [type="reset"]:focus {
+  outline: none;
+}
+#fs-frm [type="submit"],
+#fs-frm [type="reset"] {
+  margin-bottom: 0;
+}
+#fs-frm select {
+  text-transform: none;
+}
+
+#fs-frm [type="checkbox"] {
+  -webkit-appearance: checkbox;
+  -moz-appearance: checkbox;
+  appearance: checkbox;
+  display: inline-block;
+  width: auto;
+  margin: 0 .5em 0 0 !important;
+}
+
+#fs-frm [type="radio"] {
+  -webkit-appearance: radio;
+  -moz-appearance: radio;
+  appearance: radio;
+}
+
+/* address, locale */
+#fs-frm fieldset.locale input[name="city"],
+#fs-frm fieldset.locale select[name="state"],
+#fs-frm fieldset.locale input[name="postal-code"] {
+  display: inline;
+}
+#fs-frm fieldset.locale input[name="city"] {
+  width: 52%;
+}
+#fs-frm fieldset.locale select[name="state"],
+#fs-frm fieldset.locale input[name="postal-code"] {
+  width: 20%;
+}
+#fs-frm fieldset.locale input[name="city"],
+#fs-frm fieldset.locale select[name="state"] {
+  margin-right: 3%;
+}
+</style>
 
 
-<!-- My Projects -->
-<h2  id="myProjects"><span>My Projects</span></h2>
-<div class="grid">
-    <div class="image-container">
-        <img src="./IMG/Portfolio.jpeg" alt="Portfolio"/>
-        <a class="overlay facebook-watch-overlay" href="https://sultan-08.github.io/Personal-Portfolio/" target="_blank">
-            <h2>Digital Portfolio</h2>
-        </a>
-        <h4 class="facebookblue mobile-no-hover">Digital Portfolio</h4>
-    </div>
 
-    <div class="image-container">
-        <img src="./IMG/Gamer.jpg" alt="Simon Say's"/>
-        <a class="overlay eater-overlay" href="https://sultan-08.github.io/Simon-Say-s-Game/" target="_blank">
-            <h2>Simon Say's Game</h2>
-        </a>
-        <h4 class="pink mobile-no-hover">Simon Say's</h4>
-    </div>
 
-    <div class="image-container">
-        <img src="./IMG/Spotify App.jpeg" alt="instagram img"/>
-        <a class="overlay instagram-overlay" href="https://sultan-08.github.io/Spotify-Clone/" target="_blank">
-            <h2>Spotify App UI</h2>
-        </a>
-        <h4 class="orange mobile-no-hover">Spotify App</h4>
-    </div>
 
-    <div class="image-container">
-        <img src="./IMG/Coming Soon.jpeg" alt="Coming Soon"/>
-        <a class="overlay uplift-overlay" href=""> 
-            <h2>Coming Soon</h2>
-        </a>   
-        <h4 class="yellow mobile-no-hover">Coming Soon</h4>
-    </div>
-</div>
-        
-<!-- Skills Section -->
-    <section class=skills>
-        <h2  id="mySkills"><span>Tech Skill's</span></h2>
-        <div class="skills-grid">
-            <div class="skills-container">
-                <img src="./IMG/HTML.png" alt="HTML"/>
-                <a class="skills-overlay color-skills-overlay">
-                    <h2>HTML-5</h2>
-                </a>
-            </div>
-        
-            <div class="skills-container">
-                <img src="./IMG/CSS-3.png" alt="CSS-3"/>
-                <a class="skills-overlay color-skills-overlay">
-                    <h2>CSS-3</h2>
-                </a>
-            </div>
-        
-            <div class="skills-container">
-                <img src="./IMG/JS.png" alt="JS"/>
-                <a class="skills-overlay color-skills-overlay">
-                    <h2>JavaScript</h2>
-                </a>
-            </div>
-        
-            <div class="skills-container">
-                <img src="./IMG/Node JS.png" alt="Node"/>
-                <a class="skills-overlay color-skills-overlay">
-                    <h2>Node.js</h2>
-                </a>
-            </div>
-        
-            <div class="skills-container">
-                <img src="./IMG/React.png" alt="React"/>
-                <a class="skills-overlay color-skills-overlay">
-                    <h2>React.js</h2>
-                </a>
-            </div>
-        
-            <div class="skills-container">
-                <img src="./IMG/Github.png" alt="Github"/>
-                <a class="skills-overlay color-skills-overlay">
-                    <h2>Github</h2>
-                </a>
-            </div>
-        
-            <div class="skills-container">
-                <img src="./IMG/MongoDB.png" alt="MongoDB"/>
-                <a class="skills-overlay color-skills-overlay">
-                    <h2>MongoDB</h2>
-                </a>
-            </div>
-        
-            <div class="skills-container">
-                <img src="./IMG/SQL.png" alt="SQL"/>
-                <a class="skills-overlay color-skills-overlay">
-                    <h2>MySQL</h2>
-                </a>
-            </div>
-
-            <div class="skills-container">
-                <img src="./IMG/Bootstrap.png" alt="BootStrap"/>
-                <a class="skills-overlay color-skills-overlay">
-                    <h2>BootStrap</h2>
-                </a>
-            </div>
-        </div>
-    </section>
-</main>
-
+    
 <!-- Footer Section -->
 
     <footer>
