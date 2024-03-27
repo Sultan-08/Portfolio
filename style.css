@@ -28,7 +28,7 @@ header a, a {
 
 .jp a,
 .main-nav a {
-    padding: 10px 15px;
+    padding: 1rem 1.5rem;
     text-transform: uppercase;
     text-align: center;
     display: block;
@@ -37,14 +37,12 @@ header a, a {
 }
 .jp {
     margin: 0;
-    font-size: 17px;
+    font-size: 1.2rem;
     text-decoration: none;
 }
-.main-nav {
-    margin-top: -10px;
-}
+
 .main-nav a {
-    font-size: 16px;
+    font-size: 1.2rem;
     color: rgb(70, 70, 70);
     font-weight: 500;
 }
@@ -83,38 +81,38 @@ header a, a {
         padding-bottom: 20px; */
         background-color: rgb(196, 196, 196);
         width: 100%;
-        padding: 0.5rem 2.5rem 0.5rem 2.5rem;
+        padding: 0.5rem 10rem 0.5rem 2.5rem;
     }
     .main-nav .active {
         color: black;
     }
     .main-nav {
-        margin-right: 40px;
-        margin-top: 10px;
+        margin-right: 0.5rem;
+        margin-top: 0.3rem;
     }
     .main-nav a:hover {
         color: var(--gray-02);
         transition: .5s ease-in-out;
     }
     .jp {
-        margin-left: 40px;
+        margin-left: 1.5em;
         font-size: 1.45em;
     }
     .jp a {
-        padding-left: 5px !important;
-        padding-right: 5px !important;
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
         color: black;
     }
     .main-nav a:hover {
         color: black;
     }
     .main-nav a {
-        margin: 10px 10px;
+        margin: 1rem 1rem;
         padding-top: 0 !important;
         padding-bottom: 0 !important;
-        padding-left: 5px !important;
-        padding-right: 5px !important;
-        font-size: 18px;
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
+        font-size: 1.2rem;
     }
     header a {
         position: relative;
@@ -387,6 +385,88 @@ section h2 {
     }
 }
 
+/* Contact Form */
+
+#contact {
+    margin-top: 45px !important;
+    text-align: center !important;
+    border-bottom: 1px solid rgb(41, 41, 41) !important; 
+    width: 85%;
+    margin-bottom: 3rem !important;
+    line-height: .1em !important;
+    margin-left: 9% !important;
+    padding-top: 2rem;
+}
+
+#contact span { 
+    background: #D1D1D1; 
+    padding: 0 12px !important; 
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.contact {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contactImg {
+    width: 50%;
+}
+
+.contactImg img {
+    height: 80%;
+    width: 80%;
+    margin: 4.5rem 0 0 4rem;
+}
+
+.contactImg img:hover {
+    transform: scale(1.1);
+    transition: .6s ease;
+}
+
+.form {
+    width: 50%;
+    margin: 4rem 10rem;;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 0.1rem solid #ccc;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    margin-bottom: 1.3rem;
+}
+
+textarea {
+    height: 10rem;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
 /* Footer */
 
 .line {
@@ -562,6 +642,8 @@ section h2 {
     font-weight: bold;
     -webkit-text-fill-color: transparent;
 }
+
+
 /* ===============
 ANIMATIONS 
 =============== */
@@ -584,4 +666,3 @@ ANIMATIONS
         top: 50%;
     }
 }
-
