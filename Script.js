@@ -8,7 +8,7 @@ function sendToWhatsapp() {
     var url = "https://wa.me/" + number + "?text="
     + "Name : " +name+ "%0a"
     + "Email : " +email+ "%0a"
-    + "Message : " +message+ "%0a%0a";
+    + "Message : " +message+ "%0a";
 
     window.open(url, '_blank').focus();
 }
