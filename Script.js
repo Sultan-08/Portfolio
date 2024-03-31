@@ -23,10 +23,14 @@ const emailId = document.getElementById("email");
 const message = document.getElementById("message");
 
 function sendEmail() {
-    const bodyMessage = `Full Name: ${fullName.value}<br>
-    Mobile: ${mobile.value}<br>
-    E-mail ID: ${emailId.value}<br>
-    Message: ${message.value}`;
+    const bodyMessage = `<b style="font-size: 1.2rem;">Full Name:</b>
+        <span style="font-size: 1.1rem;">${fullName.value}</span><br>
+    <b style="font-size: 1.2rem;">Mobile:</b> 
+        <span style="font-size: 1.1rem;">${mobile.value}</span><br>
+    <b style="font-size: 1.2rem;">E-mail ID:</b> 
+        <span style="font-size: 1.1rem;">${email.value}</span><br>
+    <b style="font-size: 1.2rem;">Message:</b> 
+        <span style="font-size: 1.1rem;">${message.value}</span>`;
 
     Email.send({
     Host : "smtp.elasticemail.com",
