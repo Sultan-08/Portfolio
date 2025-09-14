@@ -249,6 +249,10 @@ section h2 {
     background-color: rgba(23, 120, 242, 0.65); /*Facebook Watch background img color w/ .65 opacity*/  
 }
 
+.yellow-overlay {
+    background-color: rgb(242 237 23 / 31%);
+}
+
 .explornell-overlay {
     background-color: rgba(148, 110, 221, 0.65); /*Explornell background img color w/ .65 opacity*/
 }
@@ -666,4 +670,5 @@ ANIMATIONS
 
         top: 50%;
     }
+
 }
