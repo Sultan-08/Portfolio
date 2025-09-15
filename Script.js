@@ -1,21 +1,3 @@
-// GET DATA BY WhatsApp 
-// function sendToWhatsapp() {
-//     let number = "+91**********";
-
-//     let name = document.getElementById('name').value;
-//     let email = document.getElementById('email').value;
-//     let message = document.getElementById('message').value;
-
-//     var url = "https://wa.me/" + number + "?text="
-//     + "Name : " +name+ "%0a"
-//     + "Email : " +email+ "%0a"
-//     + "Message : " +message+ "%0a";
-
-//     window.open(url, '_blank').focus();
-// }
-
-// Get Data By Gmail
-
 const form = document.querySelector("form");
 const fullName = document.getElementById("name");
 const mobile = document.getElementById("mobile");
@@ -57,3 +39,4 @@ form.addEventListener("submit", (e) => {
 
     sendEmail();
 });
+
