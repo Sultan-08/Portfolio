@@ -13,7 +13,6 @@ function sendEmail() {
         <span style="font-size: 1.1rem;">${email.value}</span><br>
     <b style="font-size: 1.2rem;">Message:</b> 
         <span style="font-size: 1.1rem;">${message.value}</span>`;
-
     Email.send({
     Host : "smtp.elasticemail.com",
     Username : "sm.studio7887@gmail.com",
@@ -39,4 +38,5 @@ form.addEventListener("submit", (e) => {
 
     sendEmail();
 });
+
 
