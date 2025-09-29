@@ -3,7 +3,6 @@ const fullName = document.getElementById("name");
 const mobile = document.getElementById("mobile");
 const emailId = document.getElementById("email");
 const message = document.getElementById("message");
-
 function sendEmail() {
     const bodyMessage = `<b style="font-size: 1.2rem;">Full Name:</b>
         <span style="font-size: 1.1rem;">${fullName.value}</span><br>
@@ -38,5 +37,3 @@ form.addEventListener("submit", (e) => {
 
     sendEmail();
 });
-
-
