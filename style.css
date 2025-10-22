@@ -2,13 +2,11 @@
     margin: 0;
     padding: 0;
 }
-
 body {
     background-color: #D1D1D1;
     color: rgb(0, 0, 0);
     font-family: 'Poppins', sans-serif;
 }
-
 /* Navigation Bar 1 */
 header {
     box-sizing: border-box;
@@ -39,13 +37,11 @@ header a, a {
     font-size: 1.2rem;
     text-decoration: none;
 }
-
 .main-nav a {
     font-size: 1.2rem;
     color: rgb(70, 70, 70);
     font-weight: 500;
 }
-
 .main-nav .active {
     color: black;
     font-weight: 700;
@@ -71,7 +67,6 @@ header a, a {
         z-index: 20; */
     }
 }
-
 @media (min-width: 768px) {
     .header {
         flex-direction: row;
@@ -671,5 +666,6 @@ ANIMATIONS
     }
 
 }
+
 
 
