@@ -213,8 +213,8 @@ section h2 {
     margin:0;
 }
 .image-container img {
-    height: 30rem;
-    width: 35rem;
+    height: 15rem;
+    width: 20rem;
     margin: 2rem;
     border-radius: 10px;
     display: block;
@@ -228,8 +228,8 @@ section h2 {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 30rem;
-    width: 35rem;
+    height: 15rem;
+    width: 20rem;
     margin: 2rem;
     opacity: 0;
     transition: .5s ease-in-out;
@@ -666,6 +666,7 @@ ANIMATIONS
     }
 
 }
+
 
 
 
