@@ -22,7 +22,6 @@ header ul {
 header a, a {
     text-decoration: none;
 }
-
 .jp a,
 .main-nav a {
     padding: 1rem 1.5rem;
@@ -128,7 +127,6 @@ header a, a {
         background: linear-gradient(120deg, #5591FF 0%, #42b0f4 100%);;
     }
 }
-
 /* Title Section */
 main hr {
     border: 0;
@@ -136,58 +134,47 @@ main hr {
     height: 1.2px;
     margin: 40px 84px;
 }
-
 .left {
     font-size: 1.5rem;
 }
-
 .firstSection {
     display: flex;
     justify-content: space-around;
     margin: 4rem 10rem;
     align-items: center;
 }
-
 .firstSection > div {
     width: 50%;
 }
-
 .leftSection {
     font-size: 2.5rem;
 }
-
 .rightSection img {
     width: 80%;
     height: 80%;
     margin: 0 3rem;
 }
-
 .purple {
     color: rgb(56, 56, 56);
     font-weight: 600;
 }
-
 #element {
     color: rgb(56, 56, 56);
     font-weight: 600;
 }
-
 section {
     max-width: 80vw;
     margin: auto;
     /* height: 80vh; */
 }
-
 section h1 {
     font-size: 2rem;
     font-weight: 100;
 }
-
 section h2 {
     font-size: 1.8rem;
     font-weight: 100;
 }
-
 /* Projects Section */
 
 #myProjects {
@@ -666,6 +653,7 @@ ANIMATIONS
     }
 
 }
+
 
 
 
