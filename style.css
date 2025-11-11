@@ -176,7 +176,6 @@ section h2 {
     font-weight: 100;
 }
 /* Projects Section */
-
 #myProjects {
     margin-top: 45px !important;
     text-align: center !important;
@@ -225,15 +224,12 @@ section h2 {
 .eater-overlay {
     background-color: rgba(198, 103, 109, 0.65); /*Eater background img color w/ .65 opacity*/
 }
-
 .facebook-watch-overlay {
     background-color: rgba(23, 120, 242, 0.65); /*Facebook Watch background img color w/ .65 opacity*/  
 }
-
 .yellow-overlay {
     background-color: rgb(242 237 23 / 31%);
 }
-
 .explornell-overlay {
     background-color: rgba(148, 110, 221, 0.65); /*Explornell background img color w/ .65 opacity*/
 }
@@ -287,7 +283,6 @@ section h2 {
     text-align: center;
     margin-top: 2vh;
 }
-
 .overlay img {
     position: absolute;
     top: 50%;
@@ -298,9 +293,7 @@ section h2 {
     text-align: center;
     width: 5px;
 }
-
 /* Skiis */
-
 #mySkills {
     margin-top: 45px !important;
     text-align: center !important;
@@ -311,14 +304,12 @@ section h2 {
     margin-left: 9% !important;
     padding-top: 2rem;
 }
-
 #mySkills span { 
     background: #D1D1D1; 
     padding: 0 12px !important; 
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
-
 .skills-grid {
     display: flex;
     flex-wrap: wrap;
@@ -333,7 +324,6 @@ section h2 {
     display: block;
     opacity: 1;
 }
-
 .skills-overlay {
     position: absolute;
     top: 0;
@@ -347,11 +337,9 @@ section h2 {
     transition: .5s ease-in-out;
     border-radius: 10px;
 }
-
 .color-skills-overlay {
     background-color: rgba(23, 120, 242, 0.65); /*Facebook Watch background img color w/ .65 opacity*/  
 }
-
 /*Only hover on DESKTOP*/
 @media screen and (min-width: 700px) {
     .skills-container:hover .overlay {
@@ -653,6 +641,7 @@ ANIMATIONS
     }
 
 }
+
 
 
 
