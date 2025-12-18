@@ -393,8 +393,8 @@ section h2 {
 
 .contactImg img {
     height: 80%;
-    width: 80%;
-    margin: 4.5rem 0 0 4rem;
+    width: 90%;
+    margin: 4rem 0 0 4rem;
 }
 
 .contactImg img:hover {
@@ -641,6 +641,7 @@ ANIMATIONS
     }
 
 }
+
 
 
 
