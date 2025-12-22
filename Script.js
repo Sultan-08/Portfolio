@@ -1,40 +1,20 @@
-const form = document.querySelector("form");
-const fullName = document.getElementById("name");
-const mobile = document.getElementById("mobile");
-const emailId = document.getElementById("email");
-const message = document.getElementById("message");
-function sendEmail() {
-    const bodyMessage = `<b style="font-size: 1.2rem;">Full Name:</b>
-        <span style="font-size: 1.1rem;">${fullName.value}</span><br>
-    <b style="font-size: 1.2rem;">Mobile:</b> 
-        <span style="font-size: 1.1rem;">${mobile.value}</span><br>
-    <b style="font-size: 1.2rem;">E-mail ID:</b> 
-        <span style="font-size: 1.1rem;">${email.value}</span><br>
-    <b style="font-size: 1.2rem;">Message:</b> 
-        <span style="font-size: 1.1rem;">${message.value}</span>`;
-    Email.send({
-    Host : "smtp.elasticemail.com",
-    Username : "sm.studio7887@gmail.com",
-    Password : "D5E2805750079F3476D60C5703B83BBBC9CF",
-    To : 'sultanmulani65@gmail.com',
-    From : "sm.studio7887@gmail.com",
-    Subject : "Enquiry From Sultan's Portfolio !",
-    Body : bodyMessage
-}).then(
-message => {
-    if (message == "OK") {
-        Swal.fire({
-            title: "Success!",
-            text: "Message Sent Successfully!",
-            icon: "success"
-        });
-    }
-});
-}
-// 
-form.addEventListener("submit", (e) => {
+    (function(){
+    emailjs.init("H29KANJPsu_fbFmsk"); // Replace with your EmailJS Public Key
+    })();
+
+    document.getElementById("contact-form").addEventListener("submit", function(e) {
     e.preventDefault();
 
-    sendEmail();
-});
+    const form = document.getElementById("contact-form");
 
+    emailjs.sendForm(
+        "service_5wzc8z4",   // Replace with EmailJS Service ID
+        "template_1d8uovq",  // Replace with EmailJS Template ID
+        this
+    ).then(function() {
+        document.getElementById("status").innerHTML = "Message sent successfully!";
+        form.reset();
+    }, function(error) {
+        document.getElementById("status").innerHTML = "Failed to send message.";
+    });
+    });
