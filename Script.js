@@ -1,5 +1,5 @@
     (function(){
-    emailjs.init("H29KANJPsu_fbFmsk"); // Replace with your EmailJS Public Key
+    emailjs.init("H29KANJPsu_fbFmsk");
     })();
 
     document.getElementById("contact-form").addEventListener("submit", function(e) {
@@ -8,8 +8,8 @@
     const form = document.getElementById("contact-form");
 
     emailjs.sendForm(
-        "service_5wzc8z4",   // Replace with EmailJS Service ID
-        "template_1d8uovq",  // Replace with EmailJS Template ID
+        "service_5wzc8z4",
+        "template_1d8uovq",
         this
     ).then(function() {
         document.getElementById("status").innerHTML = "Message sent successfully!";
@@ -18,3 +18,4 @@
         document.getElementById("status").innerHTML = "Failed to send message.";
     });
     });
+
